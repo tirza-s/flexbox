@@ -1,0 +1,87 @@
+body {
+  font-size: 1.125rem;
+  color: #707070;
+  margin: 0;
+}
+
+/* From a min width of 500px and bigger */
+/* @media (min-width: 500px) and (orientation: landscape) {
+  body {
+    background: olive;
+  }
+} */
+
+/* from a minimum width of 400px up to a width of 649px */
+/* @media (min-width: 400px) and (max-width: 649px) {
+    body {
+        background: orange;
+    }
+} */
+
+/* Typography */
+h1 {
+  font-size: 3rem;
+  color: #212614;
+  text-align: center;
+}
+
+h1 span {
+  color: #b7832f;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* layout */
+
+.container {
+  max-width: 980;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.col-1 {
+  width: 20%;
+}
+
+.col-2 {
+  width: 45%;
+}
+
+.col-3 {
+  width: 60%;
+}
+
+.col-bg {
+  color: #fff;
+  background: #312614;
+  padding: 1em;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 1em 0;
+}
+
+@media (max-width: 600px) {
+  .columns {
+    flex-direction: column;
+  }
+
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 100%;
+  }
+}
